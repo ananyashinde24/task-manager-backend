@@ -36,5 +36,7 @@ jobs:
           pip install -r requirements.txt
 
       - name: Run Unit Tests
+        env:
+            PYTHONPATH: ${{ github.workspace }}
         run: |
           pytest -v
