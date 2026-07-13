@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:  
+  name: task-amanger
+  namespace: task-manager
+spec :
+  replicas: 2
+  selector:
+    matchLabels:
+     app: task-manager
+  template:
+    metadata:
+      labels:
+        app: task-manager
+    spec:
+      containers:
+        - name: task-manager
+          image: ananyashinde/newfolder-task-manager:latest
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 8000
+          env:
+            - name: DATABASE_URL
+              value: postgresql+asyncpg://postgres:1234@postgres:5432/taskmanagerdb
+            - name: SECRET_KEY
+              value: mysecretkey
+            - name: ALGORITHM
+              value: HS256
+            - name: ACCESS_TOKEN_EXPIRE_MINUTES
+              value: "30"

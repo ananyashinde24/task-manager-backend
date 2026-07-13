@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+  namespace: task-manager
+data:
+  POSTGRES_DB: taskmanagerdb

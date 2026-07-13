@@ -1,0 +1,37 @@
+2026-07-10 11:57:42,060 | WARNING | dependencies.auth | Token verification failed.
+2026-07-10 11:58:09,020 | WARNING | routers.task_router | Received request to delete all tasks.
+2026-07-10 11:58:09,021 | WARNING | services.task_service | Deleting all tasks.
+2026-07-10 11:58:09,022 | WARNING | repository.task_repository | Deleting all tasks from database.
+2026-07-10 11:58:09,027 | WARNING | services.task_service | All tasks deleted successfully.
+2026-07-10 11:58:09,027 | WARNING | routers.task_router | Delete all tasks request completed.
+2026-07-10 13:54:27,547 | WARNING | repository.user_repository | User 'string' not found.
+2026-07-10 13:54:27,548 | WARNING | services.auth_services | Registration failed. Email already exists.
+2026-07-10 13:54:43,371 | WARNING | repository.user_repository | User 'string1' not found.
+2026-07-10 13:54:43,377 | WARNING | repository.user_repository | User with email 'user1@example.com' not found.
+2026-07-10 13:54:43,379 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "c:\Projects\New folder\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-07-10 14:49:47,286 | WARNING | services.auth_services | Registration failed. Username 'string1' already exists.
+2026-07-10 14:51:33,506 | WARNING | repository.user_repository | User 'String123' not found.
+2026-07-10 14:51:33,506 | WARNING | repository.user_repository | User with email 'user123@example.com' not found.
+2026-07-10 14:51:33,506 | WARNING | passlib.handlers.bcrypt | (trapped) error reading bcrypt version
+Traceback (most recent call last):
+  File "c:\Projects\New folder\.venv\Lib\site-packages\passlib\handlers\bcrypt.py", line 620, in _load_backend_mixin
+    version = _bcrypt.__about__.__version__
+              ^^^^^^^^^^^^^^^^^
+AttributeError: module 'bcrypt' has no attribute '__about__'
+2026-07-10 14:51:47,665 | WARNING | services.auth_services | Login failed. Invalid password for user 'String123'.
+2026-07-10 14:51:59,425 | WARNING | services.auth_services | Login failed. Invalid password for user 'String123'.
+2026-07-10 14:53:48,753 | WARNING | services.auth_services | Login failed. Invalid password for user 'String123'.
+2026-07-10 14:53:53,193 | WARNING | services.auth_services | Login failed. Invalid password for user 'String123'.
+2026-07-10 14:56:17,411 | WARNING | repository.user_repository | User 'string123' not found.
+2026-07-10 14:56:17,411 | WARNING | services.auth_services | Registration failed. Email already exists.
+2026-07-10 14:58:05,051 | WARNING | repository.user_repository | User 'string1234' not found.
+2026-07-10 14:58:05,051 | WARNING | repository.user_repository | User with email 'user1234@example.com' not found.
+2026-07-10 14:59:11,217 | WARNING | dependencies.auth | User 'string1234' attempted to access an admin endpoint.
+2026-07-10 15:01:28,810 | WARNING | dependencies.auth | User 'string1234' attempted to access an admin endpoint.
+2026-07-10 15:01:33,398 | WARNING | dependencies.auth | User 'string1234' attempted to access an admin endpoint.
+2026-07-10 16:11:31,102 | WARNING | services.auth_services | Registration failed. Username 'string1234' already exists.
